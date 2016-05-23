@@ -1,4 +1,4 @@
-$('h1,h2,h3,h4').find('*:not(:has(*))').each(function (el) {
+$('h1,h2,h3,h4').filter(':not(:has(*))').each(function (el) {
         console.log(this);
         if ($(this).text().trim() !== "") {
             $(this).rainbow({

@@ -2,7 +2,7 @@
     $.fn.rainbow = function(options) {
         this.each(function() {
 
-            options.originalText = $(this).text();
+            options.originalText = $(this).html();
             options.iterations = 0;
             if (!options.pauseLength) {
                 options.pauseLength = options.animateInterval;
